@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 @layer components {
+  a,
   button,
   input,
   textarea {
     @apply outline-0;
+    @apply inline-block;
   }
 
   ::-webkit-scrollbar-thumb {
