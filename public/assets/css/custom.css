@@ -1,0 +1,6 @@
+/* Custom styles */
+.custom-container-max {
+  max-width: 1328px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
