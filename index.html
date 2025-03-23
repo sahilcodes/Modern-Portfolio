@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <!-- Import "Inter" fonts from Google CDN -->
+    <!-- Importing "Inter" and "Urbanist" fonts from Google CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <!-- Favicon -->
@@ -32,53 +32,246 @@
           <!-- Mobile Navigation -->
           <div class="flex items-center px-10 lg:hidden">
             <!-- Mobile Brand logo -->
-            <a class="bg-black rounded-[60px] font-normal text-xl flex items-center gap-2.5" href="#home">
-              <img class="h-full max-h-[46px] w-full max-w-[46px]" src="./public/assets/images/logo/logo.svg" alt="Logo">
+            <a
+              class="bg-black rounded-[60px] font-normal text-xl flex items-center gap-2.5"
+              href="#home"
+            >
+              <img
+                class="h-full max-h-[46px] w-full max-w-[46px]"
+                src="./public/assets/images/logo/logo.svg"
+                alt="Logo"
+              />
               <span class="font-bold tracking-widest">JCREA</span>
             </a>
 
             <!-- Hamburger Menu -->
-            <button type="button" class="hamburger-menu inline-flex items-center justify-center lg:hidden ml-auto rounded-md p-1.5 text-white hover:text-primary-color border-2 border-white hover:border-primary-color [&.active]:text-primary-color [&.active]:border-primary-color transition-all">
+            <button
+              type="button"
+              class="hamburger-menu inline-flex items-center justify-center lg:hidden ml-auto rounded-md p-1.5 text-white hover:text-primary-color border-2 border-white hover:border-primary-color [&.active]:text-primary-color [&.active]:border-primary-color transition-all"
+            >
               <span class="sr-only">Open main menu</span>
-              <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg
+                class="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
               </svg>
             </button>
           </div>
 
           <!-- Dropdown/Navigation Links -->
-          <div class="nav-links absolute lg:relative bg-black lg:bg-transparent p-5 lg:p-0 hidden lg:flex gap-3.5 flex-col lg:flex-row lg:flex-wrap lg:justify-center lg:items-center [&.active]:flex w-full">
-            <a class="active [&.active]:bg-primary-color rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-bold text-sm lg:text-xl" href="#home">Home</a>
-            <a class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors" href="#about">About</a>
-            <a class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors" href="#services">Services</a>
+          <div
+            class="nav-links absolute lg:relative bg-black lg:bg-transparent p-5 lg:p-0 hidden lg:flex gap-3.5 flex-col lg:flex-row lg:flex-wrap lg:justify-center lg:items-center [&.active]:flex w-full z-50"
+          >
+            <a
+              class="active [&.active]:bg-primary-color rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-bold text-sm lg:text-xl"
+              href="#home"
+            >
+              Home
+            </a>
+            <a
+              class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors"
+              href="#about"
+            >
+              About
+            </a>
+            <a
+              class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors"
+              href="#services"
+            >
+              Services
+            </a>
 
             <!-- Desktop Brand logo -->
             <div class="hidden lg:flex lg:flex-1 justify-center">
-              <a class="bg-black rounded-[60px] px-10 font-normal text-sm lg:text-xl flex items-center gap-2.5" href="#home">
-                <img class="h-full max-h-[46px] w-full max-w-[46px]" src="./public/assets/images/logo/logo.svg" alt="Logo">
+              <a
+                class="bg-black rounded-[60px] font-normal text-sm lg:text-xl flex items-center gap-2.5"
+                href="#home"
+              >
+                <img
+                  class="h-full max-h-[46px] w-full max-w-[46px]"
+                  src="./public/assets/images/logo/logo.svg"
+                  alt="Logo"
+                />
                 <span class="font-bold tracking-widest">JCREA</span>
               </a>
             </div>
 
-            <a class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors" href="#resume">Resume</a>
-            <a class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors" href="#project">Project</a>
-            <a class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors" href="#contact">Contact</a>
+            <a
+              class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors"
+              href="#resume"
+            >
+              Resume
+            </a>
+            <a
+              class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors"
+              href="#project"
+            >
+              Project
+            </a>
+            <a
+              class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors"
+              href="#contact"
+            >
+              Contact
+            </a>
           </div>
         </nav>
       </div>
     </header>
     <!-- Component : Header Navbar - ends -->
 
-    <main class="container">
+    <main class="custom-max-sized px-3.5 lg:px-0">
       <!-- Component : Hero - starts -->
-      <div class="hero-banner">
-        <div class="wrapper">
+      <div
+        class="hero-banner mt-[38px] mx-auto relative p-0 lg:px-3.5 flex flex-col items-center w-full max-w-[1326px]"
+      >
+        <span
+          class="greet-circular relative text-center text-secondary-color font-medium outline-[1.27px] border-[1.27px] border-secondary-color rounded-[60px] py-2.5 px-[26px] mb-2.5 text-[20px] top-right-mini-deco"
+        >
+          Hello!
+        </span>
 
+        <h1
+          class="font-['Urbanist'] text-[42px] md:text-[62px] lg:text-[95.5px] leading-tight lg:leading-[95.57px] font-semibold text-center bottom-left-medium-deco mb-[55px] md:mb-[70px]"
+        >
+          I’m
+          <span class="text-primary-color">Jenny</span>, <br />
+          Product Designer
+        </h1>
+
+        <div class="quote-rating-wrapper flex justify-between w-full z-10">
+          <div class="quote-content max-w-[328px]">
+            <span class="mb-0 md:mb-[18px]">
+              <img
+                class="w-[22px] h-[22px] md:w-[36px] md:h-[36px]"
+                width="36px"
+                height="36px"
+                src="./public/assets/images/icons/quote-up.svg"
+                alt="Quote Icon vector"
+              />
+            </span>
+            <p class="text-slate-700 text-[14px] md:text-[20px] font-medium">
+              Jenny’s Exceptional product design ensure our website’s success.
+              Highly Recommended
+            </p>
+          </div>
+          <div class="rating-content text-right">
+            <ul class="stars flex justify-end mt-2 mb-2 md:mb-5">
+              <li class="star">
+                <img
+                  class="w-full max-w-[18px] md:max-w-[32px]"
+                  src="./public/assets/images/icons/star.svg"
+                  alt="Star icon vector"
+                />
+                <span class="sr-only">Star icon vector</span>
+              </li>
+              <li class="star">
+                <img
+                  class="w-full max-w-[18px] md:max-w-[32px]"
+                  src="./public/assets/images/icons/star.svg"
+                  alt="Star icon vector"
+                />
+                <span class="sr-only">Star icon vector</span>
+              </li>
+              <li class="star">
+                <img
+                  class="w-full max-w-[18px] md:max-w-[32px]"
+                  src="./public/assets/images/icons/star.svg"
+                  alt="Star icon vector"
+                />
+                <span class="sr-only">Star icon vector</span>
+              </li>
+              <li class="star">
+                <img
+                  class="w-full max-w-[18px] md:max-w-[32px]"
+                  src="./public/assets/images/icons/star.svg"
+                  alt="Star icon vector"
+                />
+                <span class="sr-only">Star icon vector</span>
+              </li>
+              <li class="star">
+                <img
+                  class="w-full max-w-[18px] md:max-w-[32px]"
+                  src="./public/assets/images/icons/star.svg"
+                  alt="Star icon vector"
+                />
+                <span class="sr-only">Star icon vector</span>
+              </li>
+            </ul>
+
+            <p class="leading-none md:leading-normal">
+              <span
+                class="font-bold font-['Urbanist'] text-secondary-color text-[16px] md:text-[47px] leading-none md:mb-1"
+                >10 Years</span
+              >
+              <br />
+              <span class="text-[10px] md:text-[20px] leading-none"
+                >Experince</span
+              >
+            </p>
+          </div>
         </div>
-      </div> 
-      <!-- Component : Hero - ends -->
-    </main>
 
+        <div
+          class="hero-image-wrapper relative md:absolute top-[30%] md:bottom-0 md:top-auto"
+        >
+          <img
+            src="./public/assets/images/banner/hero-image.svg"
+            alt="Young Pretty woman looking happy goofy with broad fun loony smile eyes wide open"
+          />
+        </div>
+
+        <div
+          class="hero-cta-wrapper absolute md:relative bottom-0 md:bottom-auto flex gap-2.5 items-center mt-[40px] md:mt-[185px] mb-3 md:mb-[46px] z-10 rounded-[50px] p-2.5 outline outline-2 outline-offset-[-2px] outline-gray-300 bg-[rgba(255,_255,_255,_0.10)] backdrop-blur-[7.5px]"
+        >
+          <a
+            class="hero-cta bg-transparent active peer [&.active]:bg-primary-color inline-flex items-center py-1 md:py-3.5 px-3 md:px-8 rounded-[60px] text-white text-[18px] md:text-[25px] font-light [&.active]:font-medium transition-all"
+            href="#portfolio"
+            target="_blank"
+          >
+            Portfolio
+            <span class="hero-cta-external-icon hidden w-[18px] md:w-auto">
+              <img
+                src="./public/assets/images/icons/cta-up-right.svg"
+                alt="External link"
+              />
+              <span class="sr-only">External link</span>
+            </span>
+          </a>
+          <a
+            class="hero-cta bg-transparent [&.active]:bg-primary-color inline-flex items-center py-1 md:py-3.5 px-3 md:px-8 rounded-[60px] text-white text-[18px] md:text-[25px] font-light [&.active]:font-medium transition-all"
+            href="#hire"
+            target="_blank"
+          >
+            Hire me
+            <span class="hero-cta-external-icon hidden w-[18px] md:w-auto">
+              <img
+                src="./public/assets/images/icons/cta-up-right.svg"
+                alt="External link"
+              />
+              <span class="sr-only">External link</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- Component : Hero - ends -->
+
+      <!-- Component : Services - starts -->
+      <div class="services">
+        <div class="custom-container-max"></div>
+      </div>
+      <!-- Component : Services - ends -->
+    </main>
 
     <!-- Core theme JS-->
     <script src="./public/assets/script/app.js"></script>

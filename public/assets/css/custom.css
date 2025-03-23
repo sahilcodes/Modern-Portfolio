@@ -1,5 +1,59 @@
 /* Custom styles */
+a,
+span,
+button,
+input {
+  display: inline-block;
+}
+
 .custom-container-max {
   max-width: 1326px;
   margin: 0 auto;
+}
+
+.custom-max-sized {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Decorative */
+.top-right-mini-deco {
+  position: relative;
+}
+.top-right-mini-deco::after {
+  content: "";
+  background-image: url(../images/decorations/hero-deco-small-orange.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: block;
+  width: 100%;
+  max-width: 28px;
+  height: 100%;
+  max-height: 28px;
+  top: 0;
+  right: 0;
+  transform: translate(100%, -50%);
+}
+.bottom-left-medium-deco {
+  position: relative;
+}
+.bottom-left-medium-deco::after {
+  content: "";
+  background-image: url(../images/decorations/hero-deco-medium-orange.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: block;
+  width: 100%;
+  max-width: 72px;
+  height: 100%;
+  max-height: 74px;
+  bottom: 0;
+  left: 0;
+  transform: translate(-80%, 66%);
+}
+
+.hero-cta.active .hero-cta-external-icon {
+  display: block;
 }
