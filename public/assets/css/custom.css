@@ -6,6 +6,18 @@ input {
   display: inline-block;
 }
 
+.custom-stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .custom-container-max {
   max-width: 1326px;
   margin: 0 auto;
@@ -56,4 +68,16 @@ input {
 
 .hero-cta.active .hero-cta-external-icon {
   display: block;
+}
+
+.services-card-mask {
+  clip-path: url(#curvy-path);
+}
+
+svg.clippy {
+  position: absolute;
+  top: -999px;
+  left: -999px;
+  width: 0;
+  height: 0;
 }
