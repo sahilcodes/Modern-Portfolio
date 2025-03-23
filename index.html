@@ -25,19 +25,60 @@
   </head>
 
   <body class="bg-white">
-    <header class="bg-black py-6 md:py-0 md:my-10 md:bg-transparent">
-      <div class="custom-container-max">
-        <nav class="bg-black text-white md:rounded-[50px] md:p-2.5 flex gap-3.5 flex-wrap justify-center">
-          <a class="bg-primary-color rounded-[60px] px-10 py-5 font-bold text-xl" href="#home">Home</a>
-          <a class="bg-black hover:bg-white/10 rounded-[60px] px-10 py-5 font-normal text-xl" href="#">About</a>
-          <a class="bg-black hover:bg-white/10 rounded-[60px] px-10 py-5 font-normal text-xl" href="#">Services</a>
-          <a class="bg-black hover:bg-white/10 rounded-[60px] px-10 py-5 font-normal text-xl" href="#">Logo</a>
-          <a class="bg-black hover:bg-white/10 rounded-[60px] px-10 py-5 font-normal text-xl" href="#">Resume</a>
-          <a class="bg-black hover:bg-white/10 rounded-[60px] px-10 py-5 font-normal text-xl" href="#">Project</a>
-          <a class="bg-black hover:bg-white/10 rounded-[60px] px-10 py-5 font-normal text-xl" href="#">Contact</a>
+    <!-- Component : Header Navbar - starts -->
+    <header class="bg-black py-6 lg:py-0 lg:my-10 lg:bg-transparent">
+      <div class="custom-container-max p-0 lg:px-3.5">
+        <nav class="bg-black text-white lg:rounded-[50px] lg:p-2.5 relative">
+          <!-- Mobile Navigation -->
+          <div class="flex items-center px-10 lg:hidden">
+            <!-- Mobile Brand logo -->
+            <a class="bg-black rounded-[60px] font-normal text-xl flex items-center gap-2.5" href="#home">
+              <img class="h-full max-h-[46px] w-full max-w-[46px]" src="./public/assets/images/logo/logo.svg" alt="Logo">
+              <span class="font-bold tracking-widest">JCREA</span>
+            </a>
+
+            <!-- Hamburger Menu -->
+            <button type="button" class="hamburger-menu inline-flex items-center justify-center lg:hidden ml-auto rounded-md p-1.5 text-white hover:text-primary-color border-2 border-white hover:border-primary-color [&.active]:text-primary-color [&.active]:border-primary-color transition-all">
+              <span class="sr-only">Open main menu</span>
+              <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Dropdown/Navigation Links -->
+          <div class="nav-links absolute lg:relative bg-black lg:bg-transparent p-5 lg:p-0 hidden lg:flex gap-3.5 flex-col lg:flex-row lg:flex-wrap lg:justify-center lg:items-center [&.active]:flex w-full">
+            <a class="active [&.active]:bg-primary-color rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-bold text-sm lg:text-xl" href="#home">Home</a>
+            <a class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors" href="#about">About</a>
+            <a class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors" href="#services">Services</a>
+
+            <!-- Desktop Brand logo -->
+            <div class="hidden lg:flex lg:flex-1 justify-center">
+              <a class="bg-black rounded-[60px] px-10 font-normal text-sm lg:text-xl flex items-center gap-2.5" href="#home">
+                <img class="h-full max-h-[46px] w-full max-w-[46px]" src="./public/assets/images/logo/logo.svg" alt="Logo">
+                <span class="font-bold tracking-widest">JCREA</span>
+              </a>
+            </div>
+
+            <a class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors" href="#resume">Resume</a>
+            <a class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors" href="#project">Project</a>
+            <a class="bg-black [&.active]:bg-primary-color hover:bg-white/10 rounded-[60px] px-5 lg:px-10 py-2.5 lg:py-5 font-normal text-sm lg:text-xl transition-colors" href="#contact">Contact</a>
+          </div>
         </nav>
       </div>
     </header>
+    <!-- Component : Header Navbar - ends -->
+
+    <main class="container">
+      <!-- Component : Hero - starts -->
+      <div class="hero-banner">
+        <div class="wrapper">
+
+        </div>
+      </div> 
+      <!-- Component : Hero - ends -->
+    </main>
+
 
     <!-- Core theme JS-->
     <script src="./public/assets/script/app.js"></script>
