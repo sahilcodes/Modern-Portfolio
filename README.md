@@ -21,6 +21,7 @@ If at any point you come across some errors, probably while trying to edit somet
 
 ### Preview
 
+![Project Preview : Desktop Lighthouse score - 24/03/2025](./_project-preview/home1-score-2025-03-24-135918.png)
 ![Project Preview : Hero Desktop](./_project-preview/hero1-desktop.png)
 ![Project Preview : Services Desktop](./_project-preview/services1-desktop.png)
 ![Project Preview : Footer Desktop](./_project-preview/footer1-desktop.png)
