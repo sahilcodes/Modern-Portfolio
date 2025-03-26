@@ -58,12 +58,12 @@ input {
   position: absolute;
   display: block;
   width: 100%;
-  max-width: 72px;
+  max-width: 42px;
   height: 100%;
-  max-height: 74px;
+  max-height: 44px;
   bottom: 0;
   left: 0;
-  transform: translate(-80%, 66%);
+  transform: translate(-80%, 60%);
 }
 
 .hero-cta.active .hero-cta-external-icon {
@@ -80,4 +80,16 @@ svg.clippy {
   left: -999px;
   width: 0;
   height: 0;
+}
+
+
+/* Custom Media Query */
+
+/* For the screen of Ipad Pro and above */
+@media screen and (min-width: 769px) {
+  .bottom-left-medium-deco::after {
+    max-width: 72px;
+    max-height: 74px;
+    transform: translate(-80%, 66%);
+  }
 }
